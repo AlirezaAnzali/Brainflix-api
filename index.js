@@ -1,7 +1,9 @@
 const express = require("express");
 const videoroutes = require("./routes/videos");
 
+
 const app = express();
+
 app.use(express.static("public"));
 
 app.use("/videos", videoroutes);
