@@ -31,7 +31,7 @@
 
   <body>
     <h1 id="project-2-brainflix-api">
-      Project 2 - BrainFlix API Documentation
+      Ali's BrainFlix API Documentation
     </h1>
     <section>
       <h2 id="overview">Overview</h2>
@@ -195,7 +195,7 @@
                 </li>
             </ul>
         </section>
-        <h3 id="delete-videos-videoid-comments-commentid-">DELETE <code>/videos/:videoId/comments/:commentId</code></h3>
+        <!-- <h3 id="delete-videos-videoid-comments-commentid-">DELETE <code>/videos/:videoId/comments/:commentId</code></h3>
         <ul>
             <li>Deletes the given comment and returns it in the response body</li>
             <li><code>:videoId</code> must be swapped out with the numeric id of a video as found in the list of videos</li>
@@ -212,7 +212,42 @@
         }
         </code></pre>
             </li>
+        </ul> -->
+    <!-- </section> -->
+    <section>
+      <section>
+        <h2 id="post-videos-id-comments-">POST <code>/videos</code></h2>
+        <ul>
+          <li>Creates a new video through Upload page</li>
+          <li>
+            Post body example
+            <pre><code>
+              {
+                <span class="hljs-attr">"title"</span>: <span class="hljs-string">"My Video"</span>,
+                <span class="hljs-attr">"description"</span>: <span class="hljs-string">"This is a test"</span>
+              }
+            </code></pre>
+          </li>
+          <li>
+            response body example
+            <pre><code class="lang-json">
+                  {
+                    <span class="hljs-attr">"id"</span>: <span class="hljs-string">"1af0jruup5gu"</span>,
+                    <span class="hljs-attr">"title"</span>: <span class="hljs-string">"My Video"</span>,
+                    <span class="hljs-attr">"channel"</span>: <span class="hljs-string">"Ali Channel"</span>,
+                    <span class="hljs-attr">"image"</span>: <span class="hljs-string">"image9.jpeg"</span>,
+                    <span class="hljs-attr">"description"</span>: <span class="hljs-string">"This is a test"</span>,
+                    <span class="hljs-attr">"views"</span>: <span class="hljs-string">"0"</span>,
+                    <span class="hljs-attr">"likes"</span>: <span class="hljs-string">"0"</span>,
+                    <span class="hljs-attr">"duration"</span>: <span class="hljs-string">"0:00"</span>,
+                    <span class="hljs-attr">"video"</span>: <span class="hljs-string">"https://project-2-api.herokuapp.com/stream"</span>,
+                    <span class="hljs-attr">"timestamp"</span>: <span class="hljs-number">1545162149000</span>,
+                    <span class="hljs-attr">"comments"</span>: [] 
+                  }
+              </code></pre>
+          </li>
         </ul>
-    </section> -->
+      </section>
+    </section>
   </body>
 </html>

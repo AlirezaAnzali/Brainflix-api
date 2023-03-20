@@ -28,7 +28,7 @@ router.get("/:id", (req, res) => {
       ...video,
       image: `${url}${port}/images/image${[index]}.jpeg`,
     };
-    res.send(videoWithIndex);
+    res.json(videoWithIndex);
   } else {
     res.send("No video with that id exists");
   }
