@@ -29,7 +29,6 @@ Clone both [client side](https://github.com/AlirezaAnzali/BrainFlix)  and [serve
 
     $ npm install
 
-
 3. Run the server by following command:
 
     $ node index.js
@@ -42,6 +41,7 @@ Clone both [client side](https://github.com/AlirezaAnzali/BrainFlix)  and [serve
 2. Run the client side by following command:
 
     $ npm start
+
 After running the npm start command in the client side folder, the React development server will start up and you should be able to view the application in your browser.
 
 
