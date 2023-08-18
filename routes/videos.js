@@ -4,7 +4,6 @@ const router = express.Router();
 const fs = require("fs");
 const { v4: uuidv4 } = require("uuid");
 require("dotenv").config();
-const port = process.env.PORT;
 const url = process.env.BASE_URL;
 
 router.get("/", (req, res) => {
@@ -13,7 +12,7 @@ router.get("/", (req, res) => {
       id: video.id,
       title: video.title,
       channel: video.channel,
-      image: `${url}${port}/images/image${[index]}.jpeg`,
+      image: `${url}/images/image${[index]}.jpeg`,
     };
   });
   res.json(filteredVideos);
@@ -26,7 +25,7 @@ router.get("/:id", (req, res) => {
     const index = videos.findIndex((video) => video.id === id);
     const videoWithIndex = {
       ...video,
-      image: `${url}${port}/images/image${[index]}.jpeg`,
+      image: `${url}/images/image${[index]}.jpeg`,
     };
     res.json(videoWithIndex);
   } else {
